@@ -21,17 +21,27 @@ class increasingSequence {
             throw new IllegalArgumentException("k must be less than n and greater than 0");
         }
 
-        incSqc(1,k,n,"");
+        incSqc2(k,n,"");
 
     }
-
+    // using 4 param
     public static void incSqc(int i , int k , int n , String ans){
-        if(ans.length()==4){
+        if(ans.length()==k){
             System.out.println(ans);
             return ;
         }
         if(i==n) return;
         incSqc(i+1,k,n,ans+i);
         incSqc(i+1,k,n,ans);
+    }
+    // reduce 1 param
+    public static void incSqc2(int k , int n , String ans){
+        if(ans.length()==k){
+            System.out.println(ans);
+            return ;
+        }
+        if(n==0) return;
+        incSqc2(k,n-1,n+ans);
+        incSqc2(k,n-1,ans);
     }
 }
