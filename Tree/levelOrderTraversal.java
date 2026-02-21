@@ -13,6 +13,11 @@ public class levelOrderTraversal {
                 }
         }
     public static void main(String[] args){
-
+        BinaryTree tree = new BinaryTree();
+        int[] arr = {6,4,3,2,7,5,9};
+        for(int i =0 ; i < arr.length ; i++){
+            tree.insert(arr[i]);
+        }
+        tree.inorder();
     }
 }
