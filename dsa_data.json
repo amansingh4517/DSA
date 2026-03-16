@@ -1,1 +1,23 @@
-[]
+[
+  {
+    "id": 1773696359085,
+    "title": "113. Path Sum II",
+    "diff": "Medium",
+    "link": "https://leetcode.com/problems/path-sum-ii",
+    "topics": [
+      "Backtracking",
+      "Trees"
+    ],
+    "families": [
+      "Tree Path"
+    ],
+    "patterns": [
+      "DFS",
+      "Backtracking"
+    ],
+    "approach": "Carried a list down the recursion to track the current path. \nAdded node value going down, removed it coming back up. \nSaved the list at valid leaves where targetSum == 0.",
+    "insight": "Backtracking on trees — one shared list travels the whole \nrecursion. Add before going into children, remove after \nboth children return. This keeps the list always reflecting \nexactly the current root-to-node path.\n\nSave with new ArrayList<>(arr) at valid leaves — never the \nreference directly, because the same list object keeps \nmutating as traversal continues.",
+    "mistakes": "1. Saved ans.add(arr) instead of ans.add(new ArrayList<>(arr)).\n   arr is the same object throughout — by the time you read \n   the result it is empty. Always save a snapshot not a reference.\n\n2. Earlier version passed root instead of root.left / root.right \n   in the recursive call — infinite recursion on the same node.",
+    "date": "17 Mar 2026"
+  }
+]
