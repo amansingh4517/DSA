@@ -1,5 +1,5 @@
+package Knapsack;
 public class Q1_zeroOneKnapsack {
-
         public static void main(String[] args) {
         int[] weight = { 1, 3, 5, 6, 8 };
         int[] value = { 1, 2, 4, 5, 3 };

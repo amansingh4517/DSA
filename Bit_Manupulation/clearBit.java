@@ -19,6 +19,7 @@ public class clearBit {
         int i = sc.nextInt();
         n = n ^ (1 << i);
         Binary.print(n);
-
+        sc.close();
     }
+
 }

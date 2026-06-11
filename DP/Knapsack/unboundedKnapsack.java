@@ -1,3 +1,4 @@
+package Knapsack;
 //unboundedKnapsack is same as 0/1 knapsack but the difference is just that we there is no limit on item we can pick and item as many time as we want
 public class unboundedKnapsack {
     public static void main(String[] args) {

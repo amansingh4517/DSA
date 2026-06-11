@@ -1,4 +1,6 @@
-public class longestCommonSubsequence {
+package SubsequenceDP;
+public class printLongestCommonSubsequence {
+    
     public static void main(String[] args) {
         String s1 = "agkfhtlsj";
         String s2 = "agftlsglhesj";

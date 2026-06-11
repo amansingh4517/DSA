@@ -1,3 +1,4 @@
+package Knapsack;
 public class Q3_equalSumPartition {
 
     public static void main(String[] args) {

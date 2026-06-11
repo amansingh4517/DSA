@@ -1,4 +1,5 @@
 //find the if there is any subset who sum is equal to targetsum;
+package Knapsack;
 public class Q2_subsetSum {
     public static void main(String[] args) {
         int[] set = { 1, 3, 5, 6, 7, 4, 8 };

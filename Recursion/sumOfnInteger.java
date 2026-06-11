@@ -1,4 +1,3 @@
-package Recursion;
 import java.util.Scanner;
 public class sumOfnInteger {
     private static void sum(int n ){
