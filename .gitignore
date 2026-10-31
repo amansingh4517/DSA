@@ -1,2 +1,11 @@
-#java class file
+# Java build output
 *.class
+out/
+target/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# macOS
+.DS_Store
